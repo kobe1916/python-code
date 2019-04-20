@@ -1,0 +1,22 @@
+#遍历字符串中的每一个元素。借助一个辅助键值对来存储某个元素最后一次出现的下标。用一个整形变量存储当前无重复字符的子串开始的下标。
+
+class Solution:
+    """
+    @param: s: a string
+    @return: an integer
+    """
+    def lengthOfLongestSubstring(self, s):
+        # write your code here
+        res = 0
+        if s is None or len(s) == 0:
+            return res
+        d = {}
+        tmp = 0
+        start = 0
+        for i in range(len(s)):
+            if s[i] in d and d[s[i]] >= start:
+                start = d[s[i]] + 1
+            tmp = i - start + 1
+            d[s[i]] = i
+            res = max(res, tmp)
+        return res
