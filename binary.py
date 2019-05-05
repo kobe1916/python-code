@@ -6,7 +6,7 @@ print(right)
 print(len(ls))
 
 while left <= right:
-    mid = left + (right-left)//2
+    mid = left + (right-left)//2     #计算中位数一定要放在循环内！
     if ls[mid ] > ls[k-1]:
         right = mid - 1
     elif ls[mid] < ls[k-1] :
