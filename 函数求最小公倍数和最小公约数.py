@@ -6,8 +6,8 @@ def gcd(x, y):
 			return factor
 	return 1
 
-
-def lcm(x, y):
+#求最小公倍数
+def lcm(x, y):          
 	return x * y // gcd(x, y)
 
 
