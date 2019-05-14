@@ -1,3 +1,4 @@
+#求最大公约数
 def gcd(x, y):
 	if x > y:
 		(x, y) = (y, x)
