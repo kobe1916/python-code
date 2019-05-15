@@ -9,7 +9,7 @@ print(f1(100))
 print(f1(c=2, b=3, a=1))
 
 
-# 可变参数    参数个数可任意
+# 可变参数  *args--元组  参数个数可任意
 def f2(*args):
 	sum = 0
 	for num in args:
@@ -22,7 +22,7 @@ print(f2(1, 2, 3, 4, 5))
 print(f2())
 
 
-# 关键字参数
+# 关键字参数    **kw--字典
 def f3(**kw):
 	if 'name' in kw:
 		print('欢迎你%s!' % kw['name'])
