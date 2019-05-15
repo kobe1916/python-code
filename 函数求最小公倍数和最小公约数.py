@@ -21,7 +21,8 @@ def gcd(x, y):
 			return factor
 	return 1
 
-#求最小公倍数
+
+#最小公倍数=两整数的乘积÷最大公约数
 def lcm(x, y):          
 	return x * y // gcd(x, y)
 
