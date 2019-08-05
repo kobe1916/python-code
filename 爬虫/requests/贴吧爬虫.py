@@ -12,9 +12,7 @@ class Tiebaspider:
 if __name__ =='__main__':
     tiebaspider = Tiebaspider("李毅"）
 
-                              
-                              
-                              
+                      
                               
                               
                               
@@ -31,10 +29,11 @@ class Tiebaspider:
         
     #1.构造url列表
     def get_url_list(self):
-        url_list = []
+       ''' url_list = []
         for i in range(1000):
             url_list.append(self.url_temp.format(i*50))
-        return url_list
+        return url_list'''
+        return [self.url_temp.format(i*50) for i in range(1000)]
 
     #2.发送请求，获取响应
     def parse_url(self,url):
@@ -65,4 +64,18 @@ class Tiebaspider:
 if __name__ == '__main__' :
     tieba_spider = Tiebaspider("李毅")
     tieba_spider.run()
-                            
+                     
+                              
+ '''                             
+In [13]: [i for i in range(3)]
+Out[13]: [0, 1, 2]
+
+In [14]: [i+3 for i in range(3)]
+Out[14]: [3, 4, 5]
+
+In [15]: ["a" for i in range(3)]
+Out[15]: ['a', 'a', 'a']
+
+In [16]: ["a" for i in range(3) if i%2 ==0]
+Out[16]: ['a', 'a']
+'''
