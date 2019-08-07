@@ -9,3 +9,24 @@ r = requests.get("https://user.qzone.qq.com/604368100/infocenter",headers = head
 
 with open("qq2.html","w",encoding = "utf-8") as f:
     f.write(r.content.decode())
+
+
+'''
+字典推导式
+字典是无序的
+In [4]: {i:i+10 for i in range(10)}
+Out[4]: {0: 10, 1: 11, 2: 12, 3: 13, 4: 14, 5: 15, 6: 16, 7: 17, 8: 18, 9: 19}
+
+In [5]: {i:"b" for i in range(10)}
+Out[5]:
+{0: 'b',
+ 1: 'b',
+ 2: 'b',
+ 3: 'b',
+ 4: 'b',
+ 5: 'b',
+ 6: 'b',
+ 7: 'b',
+ 8: 'b',
+ 9: 'b'}
+ '''
