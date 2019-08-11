@@ -1,4 +1,3 @@
-
 In [1]: import requests
 
 In [2]: response = requests.get("http://www.baidu.com")
