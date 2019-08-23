@@ -1,3 +1,4 @@
+'''
 class Tiebaspider:
     def __init__(self):
         pass
@@ -11,6 +12,7 @@ class Tiebaspider:
 
 if __name__ =='__main__':
     tiebaspider = Tiebaspider("李毅"）
+'''
 
                       
                               
