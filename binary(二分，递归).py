@@ -7,3 +7,5 @@ def binary_search(arr,start,end,hkey):
 	if arr[mid] < hkey:
 		return binary_search(arr, mid + 1, end, hkey)
 	return mid
+
+#eg. binary_search()
